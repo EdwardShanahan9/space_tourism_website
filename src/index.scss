@@ -1,0 +1,28 @@
+/* Imports */
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
+
+/* Variables */
+$colorBlue900: #0b0d17;
+$colorBlue300: #d0d6f9;
+$colorWhite: #ffffff;
+
+$fontFamilyPrimary: "Barlow", serif;
+$fontFamilySecondary: "Barlow Condensed", serif;
+$fontFamilyHeading: "Bellefair", serif;
+
+/* Global */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $fontFamilyPrimary;
+}
