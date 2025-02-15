@@ -1,4 +1,3 @@
-import "./Navbar.scss";
 import LogoIcon from "../../assets/Icons/logo.svg";
 import MenuIcon from "../../assets/Icons/icon-hamburger.svg";
 

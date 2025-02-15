@@ -26,3 +26,80 @@ html {
 body {
   font-family: $fontFamilyPrimary;
 }
+
+// Typography
+
+h1 {
+  font-family: $fontFamilyHeading;
+}
+
+// Navbar
+
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  padding: 2.4rem;
+  width: 100%;
+  margin-bottom: 2.4rem;
+
+  &__logo {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  &__menu {
+    cursor: pointer;
+  }
+}
+
+// Home
+
+.Home {
+  color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &__container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2.4rem;
+  }
+
+  &__title {
+    color: #d0d6f9;
+    font-family: $fontFamilySecondary;
+    font-size: 1.6rem;
+    margin-bottom: 2.4rem;
+  }
+
+  &__heading {
+    font-size: 8rem;
+    margin-bottom: 2.4rem;
+  }
+
+  &__text {
+    color: #d0d6f9;
+    font-size: 1.5rem;
+    line-height: 180%;
+    margin-bottom: 4rem;
+  }
+
+  &__button {
+    font-family: $fontFamilyHeading;
+    font-size: 1.8rem;
+    padding: 6.15rem 3.3rem;
+    border: none;
+    border-radius: 100%;
+  }
+}
