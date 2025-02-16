@@ -29,10 +29,6 @@ body {
 
 // Typography
 
-h1 {
-  font-family: $fontFamilyHeading;
-}
-
 // Navbar
 
 .Navbar {
@@ -52,6 +48,11 @@ h1 {
   &__menu {
     cursor: pointer;
   }
+}
+
+.Navbar__mobile-list {
+  color: $colorWhite;
+  list-style: none;
 }
 
 // Home
@@ -85,7 +86,10 @@ h1 {
 
   &__heading {
     font-size: 8rem;
+    font-family: $fontFamilyHeading;
+    font-weight: 400;
     margin-bottom: 2.4rem;
+    outline: none;
   }
 
   &__text {
