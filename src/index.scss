@@ -24,10 +24,9 @@ html {
 }
 
 body {
+  color: $colorWhite;
   font-family: $fontFamilyPrimary;
 }
-
-// Typography
 
 // Navbar
 
@@ -50,9 +49,14 @@ body {
   }
 }
 
-.Navbar__mobile-list {
-  color: $colorWhite;
-  list-style: none;
+// Mobile Navbar
+
+.MobileNavbar {
+  position: absolute;
+  background-color: rgba(11, 13, 23, 0.15);
+  right: 0;
+  top: 0;
+  height: 100vh;
 }
 
 // Home
