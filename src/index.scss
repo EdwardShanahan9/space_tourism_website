@@ -38,6 +38,7 @@ body {
   padding: 2.4rem;
   width: 100%;
   margin-bottom: 2.4rem;
+  z-index: 1;
 
   &__logo {
     width: 4rem;
@@ -53,10 +54,23 @@ body {
 
 .MobileNavbar {
   position: absolute;
-  background-color: rgba(11, 13, 23, 0.15);
+
   right: 0;
   top: 0;
   height: 100vh;
+  z-index: 12;
+  width: 63%;
+
+  &__blur {
+    background-color: rgba(11, 13, 23, 0.05);
+    backdrop-filter: blur(8.5rem);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+  }
 }
 
 // Home

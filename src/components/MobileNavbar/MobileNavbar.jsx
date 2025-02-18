@@ -7,6 +7,8 @@ const MobileNavbar = () => {
     <div className="MobileNavbar">
       <img className="MobileNavbar__icon" src={CloseIcon} alt="Close Icon" />
 
+      <div className="MobileNavbar__blur"></div>
+
       <ul className="MobileNavbar__list">
         {navItem.map((item, index) => (
           <li key={index}>
