@@ -54,12 +54,33 @@ body {
 
 .MobileNavbar {
   position: absolute;
-
   right: 0;
   top: 0;
   height: 100vh;
   z-index: 12;
   width: 63%;
+  padding: 3.2rem;
+
+  &__icon {
+    position: absolute;
+    right: 2.4rem;
+    top: 3.2rem;
+  }
+
+  &__list {
+    margin-top: 13.3rem;
+    list-style: none;
+
+    & li {
+      font-size: 1.6rem;
+      font-family: $fontFamilySecondary;
+      margin-bottom: 3.2rem;
+
+      & span {
+        margin-right: 1.5rem;
+      }
+    }
+  }
 
   &__blur {
     background-color: rgba(11, 13, 23, 0.05);

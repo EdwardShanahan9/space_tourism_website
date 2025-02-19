@@ -12,7 +12,7 @@ const MobileNavbar = () => {
       <ul className="MobileNavbar__list">
         {navItem.map((item, index) => (
           <li key={index}>
-            0{index} {item}
+            <span>0{index}</span> {item}
           </li>
         ))}
       </ul>
