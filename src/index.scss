@@ -59,7 +59,7 @@ body {
   height: 100vh;
   z-index: 12;
   width: 63%;
-  padding: 3.2rem;
+  padding-left: 3.2rem;
 
   &__icon {
     position: absolute;
@@ -75,6 +75,8 @@ body {
       font-size: 1.6rem;
       font-family: $fontFamilySecondary;
       margin-bottom: 3.2rem;
+      display: flex;
+      justify-content: space-between;
 
       & span {
         margin-right: 1.5rem;
@@ -92,6 +94,14 @@ body {
     height: 100%;
     width: 100%;
   }
+}
+
+.MobileNavbar.active li::after {
+  background-color: $colorWhite;
+  height: 1.9rem;
+  width: 0.3rem;
+  display: block;
+  content: " ";
 }
 
 // Home

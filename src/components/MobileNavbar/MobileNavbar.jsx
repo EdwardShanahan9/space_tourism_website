@@ -9,10 +9,12 @@ const MobileNavbar = () => {
 
       <div className="MobileNavbar__blur"></div>
 
-      <ul className="MobileNavbar__list">
+      <ul className="MobileNavbar__list active">
         {navItem.map((item, index) => (
           <li key={index}>
-            <span>0{index}</span> {item}
+            <span>
+              <span className="MobileNavbar__number">0{index}</span> {item}
+            </span>
           </li>
         ))}
       </ul>
