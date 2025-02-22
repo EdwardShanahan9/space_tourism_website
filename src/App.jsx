@@ -1,9 +1,12 @@
 import MainLayout from "./layout/MainLayout/MainLayout";
+import { NavbarContextProvider } from "./context/NavbarContext/NavbarContext";
 
 function App() {
   return (
     <>
-      <MainLayout />
+      <NavbarContextProvider>
+        <MainLayout />
+      </NavbarContextProvider>
     </>
   );
 }

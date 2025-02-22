@@ -53,13 +53,15 @@ body {
 // Mobile Navbar
 
 .MobileNavbar {
+  visibility: hidden;
+  width: 0;
   position: absolute;
   right: 0;
   top: 0;
   height: 100vh;
   z-index: 12;
-  width: 63%;
   padding-left: 3.2rem;
+  transition: all 0.3s ease-out;
 
   &__icon {
     position: absolute;
@@ -102,6 +104,12 @@ body {
   width: 0.3rem;
   display: block;
   content: " ";
+}
+
+.MobileNavbar.active {
+  transition: all 0.4a ease-in-out;
+  visibility: visible;
+  width: 63%;
 }
 
 // Home
