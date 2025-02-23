@@ -40,6 +40,10 @@ body {
   margin-bottom: 2.4rem;
   z-index: 1;
 
+  @media (min-width: 768px) {
+    padding: 2.4rem 0 2.4rem 4rem;
+  }
+
   &__logo {
     width: 4rem;
     height: 4rem;
@@ -47,6 +51,7 @@ body {
 
   &__menu {
     cursor: pointer;
+    display: none;
   }
 }
 
@@ -54,6 +59,7 @@ body {
 
 .MobileNavbar {
   visibility: hidden;
+  display: none;
   width: 0;
   position: absolute;
   right: 0;
@@ -110,6 +116,7 @@ body {
   transition: all 0.4a ease-in-out;
   visibility: visible;
   width: 63%;
+  display: block;
 }
 
 // Home

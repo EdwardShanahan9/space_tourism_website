@@ -4,6 +4,8 @@ import MobileNavbar from "../MobileNavbar/MobileNavbar";
 import { useContext } from "react";
 import { NavbarContext } from "../../context/NavbarContext/NavbarContext";
 
+const navItem = ["HOME", "DESTINATION", "CREW", "TECHNOLOGY"];
+
 const Navbar = () => {
   const { handleNavbar } = useContext(NavbarContext);
 
@@ -17,6 +19,16 @@ const Navbar = () => {
         src={MenuIcon}
         alt="Menu Icon"
       />
+
+      <ul className="Navbar__list">
+        {navItem.map((item, index) => (
+          <li key={index}>
+            <span>
+              <span className="Navbar__number">0{index}</span> {item}
+            </span>
+          </li>
+        ))}
+      </ul>
 
       <MobileNavbar />
     </nav>
