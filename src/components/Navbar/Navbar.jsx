@@ -11,7 +11,9 @@ const Navbar = () => {
 
   return (
     <nav className="Navbar">
-      <img className="Navbar__logo" src={LogoIcon} alt="Logo" />
+      <div className="Navbar__logo">
+        <img className="" src={LogoIcon} alt="Logo" />
+      </div>
 
       <img
         onClick={() => handleNavbar()}
@@ -29,6 +31,8 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
+
+      <div className="Navbar__overlay"></div>
 
       <MobileNavbar />
     </nav>
