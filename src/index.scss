@@ -193,6 +193,10 @@ body {
     font-family: $fontFamilySecondary;
     font-size: 1.6rem;
     margin-bottom: 2.4rem;
+
+    @media (min-width: 768px) {
+      font-size: 2.8rem;
+    }
   }
 
   &__heading {
@@ -201,6 +205,10 @@ body {
     font-weight: 400;
     margin-bottom: 2.4rem;
     outline: none;
+
+    @media (min-width: 768px) {
+      font-size: 14.4rem;
+    }
   }
 
   &__text {
@@ -208,6 +216,12 @@ body {
     font-size: 1.5rem;
     line-height: 180%;
     margin-bottom: 4rem;
+
+    @media (min-width: 768px) {
+      font-size: 1.6rem;
+      width: 70%;
+      margin: auto;
+    }
   }
 
   &__button {
@@ -216,5 +230,12 @@ body {
     padding: 6.15rem 3.3rem;
     border: none;
     border-radius: 100%;
+
+    @media (min-width: 768px) {
+      font-size: 3.2rem;
+      height: 27.2rem;
+      width: 27.2rem;
+      margin-top: 6.6rem;
+    }
   }
 }
