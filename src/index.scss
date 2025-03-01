@@ -44,6 +44,10 @@ body {
     padding: 0;
   }
 
+  @media (min-width: 1440px) {
+    padding: 6.4rem;
+  }
+
   &__logo {
     @media (min-width: 768px) {
       padding: 2.4rem 0 0 4rem;
